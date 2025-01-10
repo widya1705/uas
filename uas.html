@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="uas.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produk">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="container mt-4">
+        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="sepatu 1.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kenali Sepatu Running Terbaik</h5>
+                        <p>Rasakan kenyamanan dan performa optimal dengan koleksi sepatu kami.</p>
+                        <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="sepatu 2.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Desain Modern & Ergonomis</h5>
+                        <p>Dirancang untuk mendukung setiap langkah Anda.</p>
+                        <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="sepatu 3.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Promo Spesial</h5>
+                        <p>Diskon menarik untuk pembelian sepatu running hari ini.</p>
+                        <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="produk" class="container mt-5">
+    <h2>Produk Kami</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="sepatu 1.jpg" class="card-img-top" alt="Sepatu Running 1">
+                <div class="card-body">
+                    <h5 class="card-title">Athlecia At 693</h5>
+                    <p class="card-text">Harga: Rp390.000</p>
+                    <button class="btn btn-primary" onclick="beliSekarang('Athlecia At 693', 'Rp390.000', 'Ringan, tahan lama, dan dilengkapi teknologi peredam kejut.')">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="sepatu 2.jpg" class="card-img-top" alt="Sepatu Running 2">
+                <div class="card-body">
+                    <h5 class="card-title">Hoka Bondi 8 Road Running</h5>
+                    <p class="card-text">Harga: Rp950.000</p>
+                    <button class="btn btn-primary" onclick="beliSekarang('Hoka Bondi 8', 'Rp950.000', 'Nyaman untuk jarak jauh, dengan ventilasi optimal.')">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="sepatu 3.jpg" class="card-img-top" alt="Sepatu Running 3">
+                <div class="card-body">
+                    <h5 class="card-title">Reebok Energen Lux Running</h5>
+                    <p class="card-text">Harga: Rp700.000</p>
+                    <button class="btn btn-primary" onclick="beliSekarang('Reebok Energen Lux', 'Rp700.000', 'Didesain khusus untuk atlet profesional.')">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="kontak" class="container mt-5">
+        <h2>Kontak Kami</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </section>
+
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailModalLabel">Detail Produk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="detailInfo"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function beliSekarang(nama, harga, deskripsi) {
+            const detailInfo = `Nama: ${nama}<br>Harga: ${harga}<br>Deskripsi: ${deskripsi}`;
+            document.getElementById('detailInfo').innerHTML = detailInfo;
+            const modal = new bootstrap.Modal(document.getElementById('detailModal'));
+            modal.show();
+        }
+    </script>
+</body>
+</html>
